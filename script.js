@@ -14,4 +14,4 @@ function elementoLyoko() {
 }
 
 // Crea elementos cada 0,8 segundos aprox.
-setInterval(elementoLyoko, 800); 
+setInterval(elementoLyoko, 600); 

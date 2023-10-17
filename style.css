@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/lyoko.jpg");
+    background-size: cover;
+}
+
+.container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 36px;
+}
+
+.elemento-lyoko {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url("img/xana.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: fall;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(calc(100vh - 50px));
+    }
+}
